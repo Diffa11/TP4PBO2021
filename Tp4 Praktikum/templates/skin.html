@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>PT Valorant</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <a class="navbar-brand mx-auto" href="#" style="width: 200px;">DEADLINE KERJAAN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 5%">
+    <div class="card p-4" style="width: 1400px;">
+      <form action="index.php" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="tname">Id</label>
+            <input type="text" class="form-control" name="id" required />
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="tname">Nama</label>
+            <input type="text" class="form-control" name="tname" required />
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="tdeadline">Deadline</label>
+            <input class="form-control" type="date" name="tdeadline" name="tdeadline" required />
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="tsubject">Jenis Kelamin</label>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tjeniskelamin" id="tsubject1" value="Laki-laki" />
+                <label class="form-check-label" for="tsubject1">Laki-laki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tjeniskelamin" id="tsubject2" value="Perempuan" />
+                <label class="form-check-label" for="tsubject2">Perempuan</label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="tpriority">Pilih Perkerjaan</label>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tperkerjaan" id="tpriority1" value="Ngerjain UI" />
+                <label class="form-check-label" for="tpriority1">Ngerjain UI</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tperkerjaan" id="tpriority2" value="Ngoding Tampilan" />
+                <label class="form-check-label" for="tpriority2">Ngoding Tampilan</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tperkerjaan" id="tpriority3" value="Betulkan Data Base" />
+                <label class="form-check-label" for="tpriority3">Betulkan Data Base</label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" name="add" class="btn btn-primary">Add</button>
+      </form>
+      
+    </div>
+    
+    <br>
+    
+    <!-- Tabel 1 - Task -->
+    <div style="display: inline-block; ">
+      <h3>List Kerjaan</h3>
+      <!-- TABEL1 -->
+      <table align="left" border="1" style="text-align: center;">
+        <tr class="table-success">
+          <td>Id</td>
+          <td>Name</td>
+          <td>Jenis Kelamin</td>
+          <td style="width: 25%;">Deadline</td>
+          <td>Perkerjaan</td>
+          <td>Status</td>
+          <td>Aksi</td>
+        </tr>
+        <tr>
+          <!-- DATA YG AKAN DIGANTI -->
+          DATA_TABEL
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
